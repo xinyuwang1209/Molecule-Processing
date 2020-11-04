@@ -23,9 +23,9 @@ logging.basicConfig(
         level=logging.INFO,
 )
 
-from SMILE_Generation.utils.utils        import *
-from SMILE_Generation.utils.utils_train  import *
-from SMILE_Generation.config.config      import *
+from MoleculeProcessing.utils.utils        import *
+from MoleculeProcessing.utils.utils_train  import *
+from MoleculeProcessing.config.config      import *
 # model
 
 #
@@ -120,13 +120,13 @@ del df_test
 
 # Load Model
 if config.model_type == 'LSTM':
-    from SMILE_Generation.models.lstm.char_rnn import CharRNN
-    from SMILE_Generation.models.lstm.trainer import Trainer, TrainerConfig
+    from MoleculeProcessing.models.lstm.char_rnn import CharRNN
+    from MoleculeProcessing.models.lstm.trainer import Trainer, TrainerConfig
     # Load Model
     model = CharRNN(vocab,config)
 elif config.model_type == 'AMG':
-    from SMILE_Generation.models.amg.model import AMG, AMGConfig
-    from SMILE_Generation.models.amg.trainer import Trainer, TrainerConfig
+    from MoleculeProcessing.models.amg.model import AMG, AMGConfig
+    from MoleculeProcessing.models.amg.trainer import Trainer, TrainerConfig
     # Load Model
     mconf = AMGConfig(vocab_size,
                       size_block,

@@ -8,11 +8,11 @@ import torch
 import torch.optim as optim
 from torch.optim.lr_scheduler import LambdaLR
 from torch.utils.data.dataloader import DataLoader
-from SMILE_Generation.utils.utils_train import *
+from MoleculeProcessing.utils.utils_train import *
 logger = logging.getLogger(__name__)
-from SMILE_Generation.utils.utils        import *
-from SMILE_Generation.utils.utils_train  import *
-from SMILE_Generation.config.config      import *
+from MoleculeProcessing.utils.utils        import *
+from MoleculeProcessing.utils.utils_train  import *
+from MoleculeProcessing.config.config      import *
 
 class TrainerConfig:
     learning_rate = 3e-4

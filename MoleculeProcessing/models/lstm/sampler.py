@@ -1,5 +1,5 @@
-from SMILE_Generation.utils.utils        import *
-from SMILE_Generation.utils.utils_sample  import *
+from MoleculeProcessing.utils.utils        import *
+from MoleculeProcessing.utils.utils_sample  import *
 import torch.nn.functional as F
 
 def sample(model,vocab_bos,size_batch=32,size_block=70,temperature=1.,):

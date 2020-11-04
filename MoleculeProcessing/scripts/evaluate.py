@@ -29,9 +29,9 @@ def test_valid(mol):
 
 
 
-from SMILE_Generation.utils.utils        import *
-from SMILE_Generation.utils.utils_sample  import *
-from SMILE_Generation.config.config      import *
+from MoleculeProcessing.utils.utils        import *
+from MoleculeProcessing.utils.utils_sample  import *
+from MoleculeProcessing.config.config      import *
 
 
 

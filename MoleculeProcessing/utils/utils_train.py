@@ -32,9 +32,9 @@ import os
 # path_model_save = os.path.join(config.path_checkpoint,
 #                                LOG_TRAIN_LATEST)
 
-from SMILE_Generation.utils.utils        import *
-from SMILE_Generation.utils.utils_train  import *
-from SMILE_Generation.config.config      import *
+from MoleculeProcessing.utils.utils        import *
+from MoleculeProcessing.utils.utils_train  import *
+from MoleculeProcessing.config.config      import *
 
 import numpy as np
 import pandas as pd
